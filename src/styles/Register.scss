@@ -1,0 +1,121 @@
+@import "Global.scss";
+
+#register {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-4;
+    overflow-y: auto;
+
+    form {
+        width: 400px;
+        padding: 30px;
+        border-radius: 5px;
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 13px;
+            color: #667185;
+        }
+
+        .success-message {
+            border: 1px solid $color-1;
+            border-radius: 5px;
+            background-color: $color-4;
+            color: $color-1;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 15px;
+
+            a {
+                color: $color-1;
+                text-decoration: none;
+            }
+        }
+
+        .error-message {
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: rgba(255, 0, 0, 0.279);
+            color: red;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 15px;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .form-input {
+            position: relative;
+
+            input {
+                width: 100%;
+                border: 1px solid lightgrey;
+                border-radius: 5px;
+                padding: 12px 30px 12px 12px;
+                outline-width: 0px;
+                outline-color: $color-3;
+
+                &:focus {
+                    outline: 1px solid $color-3;
+                    transition: 0.5s ease-in;
+                }
+
+                &::placeholder {
+                    font-size: 13px;
+                    color: grey;
+                }
+            }
+
+            i {
+                position: absolute;
+                color: #667185;
+                top: 15px;
+                right: 10px;
+            }
+        }
+
+        .forgot {
+            font-size: 13px;
+            font-weight: 500;
+            color: $color-2;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: $color-1;
+            border-radius: 5px;
+            width: 100%;
+            padding: 13px;
+            border: none;
+            margin-top: 1.5rem;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .returning {
+            span {
+                font-size: 13px;
+                color: #667185;
+            }
+
+            a {
+                font-size: 13px;
+                font-weight: 500;
+                color: $color-2;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+        }
+        
+    }
+}

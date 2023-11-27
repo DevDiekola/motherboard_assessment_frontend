@@ -1,0 +1,86 @@
+@import "Global.scss";
+
+#sidebar {
+    position: fixed;
+    width: $sidebar-width;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    border-right: 1px solid #E4E7EC;
+
+    .top-section {
+        border-bottom: 1px solid lightgrey;
+
+        .links {
+            a {
+                text-decoration: none;
+            }
+
+            .link {
+                padding: 8px 12px;
+                
+                border-radius: 5px;
+
+                i {
+                    font-size: 20px;
+                    color: #667185;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #344054;
+                }
+                
+            }
+
+            .link:not(.active) {
+                &:hover i, &:hover span {
+                    color: $color-1;
+                    transition: 0.5s;
+                }
+            }
+
+            .link.active {
+                background-color: $color-4;
+
+                i {
+                    color: $color-1;
+                }
+
+                span {
+                    color: #101928;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .bottom-section {
+            a {
+                text-decoration: none;
+            }
+
+            .link {
+                padding: 8px 12px;
+                
+                border-radius: 5px;
+
+                i {
+                    font-size: 20px;
+                    color: #667185;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #344054;
+                }
+                
+            }
+    }
+    
+}

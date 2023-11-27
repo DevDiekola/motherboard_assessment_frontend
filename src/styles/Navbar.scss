@@ -1,0 +1,49 @@
+@import "Global.scss";
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - $sidebar-width);
+    height: $navbar-height;
+    background-color: white;
+
+    .input-div {
+        position: relative;
+        width: 60%;
+
+        i {
+            position: absolute;
+            top: 7px;
+            left: 15px;
+            color: grey;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline-width: 0px;
+            border-radius: 5px;
+            padding: 10px 10px 10px 40px;
+            background-color: #F9FAFB;
+            font-size: 13px;
+        }
+    }
+
+    .right-div {
+        button {
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #F0F2F5;
+            margin-right: 15px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}
