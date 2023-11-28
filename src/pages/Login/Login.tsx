@@ -8,7 +8,6 @@ import { useSelector } from 'react-redux';
 import { useAppDispatch } from '../../store/store';
 import { LoginData, loginUser } from '../../features/auth/auth_action';
 import { AuthState } from '../../features/auth/auth_slice';
-// import { AuthState } from '../../features/auth/auth_slice';
 
 const Login = () => {
   const { user, loginLoading, loginError } = useSelector((state: any) => state.auth as AuthState);
@@ -44,7 +43,6 @@ const Login = () => {
           <label htmlFor="email">EMAIL ADDRESS</label>
           <div className="form-input pt-1">
             <input 
-              // onChange={(e) => setEmail(e.target.value)} 
               id="email" 
               type="text" 
               placeholder="Enter your email address" 
@@ -58,7 +56,6 @@ const Login = () => {
           <label htmlFor="password">PASSWORD</label>
           <div className="form-input pt-1">
             <input 
-              // onChange={(e) => setPassword(e.target.value)} 
               id="password" 
               type={passwordVisible ? "text" : "password"}
               placeholder="Enter your password" 
@@ -75,7 +72,6 @@ const Login = () => {
         <div className="d-flex justify-content-between mt-4">
           <div className="remember d-flex align-items-center">
             <input 
-              // onChange={(e) => setRemember(e.target.checked)} 
               type="checkbox" 
               {...register('remember')}
             />
