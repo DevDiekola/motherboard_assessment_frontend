@@ -12,12 +12,6 @@
         left: 0;
     }
 
-    // width: calc(100% - 250px);
-    // height: calc(100vh - $navbar-height);
-    // margin-top: $navbar-height;
-    // margin-left: 250px;
-    // overflow-y: auto;
-
     .header {
         h3 {
             font-size: 22px;
@@ -110,6 +104,10 @@
                     font-size: 13px;
                     font-weight: 500;
                     color: #667185;
+
+                    @media only screen and (max-width: 400px) {
+                        display: none;
+                    }
                 }
             }
         }

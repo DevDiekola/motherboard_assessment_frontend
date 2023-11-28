@@ -118,7 +118,7 @@ const Hospitals = () => {
             <div className="count text-center ms-2">{favorites}</div>
           </div>
         </div>
-        <div className="sub-header d-flex justify-content-between align-items-center mt-5">
+        <div className="sub-header d-flex justify-content-between align-items-center mt-5 mb-3">
           <h4>All Hospitals</h4>
           <div className="actions d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center me-4">
