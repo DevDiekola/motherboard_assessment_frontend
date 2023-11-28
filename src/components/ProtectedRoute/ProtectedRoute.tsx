@@ -16,7 +16,7 @@ const ProtectedRoute = ({ error }: Props) => {
     navigate('/login');
   }
 
-  if (userLoading) {
+  if (user === null && userLoading) {
     return <Loading />
   }
 
