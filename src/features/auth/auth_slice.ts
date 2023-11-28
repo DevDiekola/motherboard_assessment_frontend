@@ -10,7 +10,8 @@ export interface AuthState {
   loginError: string | null,
   registerError: string | null,
   user: User | null,
-  userLoading: boolean
+  userLoading: boolean,
+  userError: string | null,
 }
 
 const initialState: AuthState = {
@@ -21,7 +22,8 @@ const initialState: AuthState = {
   loginSuccess: false,
   registerSuccess: false,
   user: null,
-  userLoading: true
+  userLoading: true,
+  userError: null
 }
 
 const authSlice = createSlice({
@@ -30,7 +32,12 @@ const authSlice = createSlice({
   reducers: {
     setCredentials: (state, { payload }) => {
       state.userLoading = false;
-      state.user = payload.user;
+      if (payload.user) {
+        state.user = payload.user;
+      }
+      else {
+        state.userError = payload.data.message;
+      }
     },
   },
   extraReducers: (builder) => {
@@ -57,9 +64,12 @@ const authSlice = createSlice({
     });
     builder.addCase(loginUser.fulfilled, (state, { payload }) => {
       state.loginLoading = false
-      state.user = (payload as User)
       state.loginError = null
       state.loginSuccess = true
+
+      state.user = (payload as User)
+      state.userLoading = false
+      state.userError = null
     });
     builder.addCase(loginUser.rejected, (state, { payload }) => {
       state.loginLoading = false

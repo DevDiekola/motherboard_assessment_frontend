@@ -21,12 +21,13 @@ function App() {
 
   useEffect(() => {
     if (data) dispatch(setCredentials(data))
-  }, [data])
+    if (error) dispatch(setCredentials(error))
+  }, [data, error])
 
   return (
     <>
       <Routes>
-        <Route element={<ProtectedRoute error={error} />}>
+        <Route element={<ProtectedRoute />}>
           <Route path="/" element={ <Hospitals/> } />
           <Route path="/hospitals" element={ <Hospitals/> } />
         </Route>
