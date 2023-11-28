@@ -7,6 +7,7 @@
     width: calc(100% - $sidebar-width);
     height: $navbar-height;
     background-color: white;
+    z-index: 100;
 
     .input-div {
         position: relative;
@@ -44,6 +45,35 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
+        }
+
+        .dropdown {
+            .initial {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $color-4;
+                color: $color-1;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .dropdown-menu {
+                width: 200px;
+                
+                .dropdown-item {
+                    padding: 10px 15px;
+
+                    i {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
         }
     }
 }

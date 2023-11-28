@@ -1,0 +1,643 @@
+[
+  {
+    "name": "Sapphire Medical Center",
+    "address": "14, Ijebu-Ode Road, Ijebu-Ode, Nigeria",
+    "phone": "08111222333",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-01-15T08:30:00Z"
+  },
+  {
+    "name": "Crystal Clear Hospital",
+    "address": "19, Abeokuta Expressway, Lagos, Nigeria",
+    "phone": "08022334455",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-02-22T12:45:00Z"
+  },
+  {
+    "name": "Top Notch Health Pavilion",
+    "address": "8, Sokoto Crescent, Abuja, Nigeria",
+    "phone": "08133445566",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-03-10T16:20:00Z"
+  },
+  {
+    "name": "Golden Gate Wellness Clinic",
+    "address": "26, Okigwe Street, Owerri, Nigeria",
+    "phone": "08044556677",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-04-05T09:15:00Z"
+  },
+  {
+    "name": "Northern Lights Medical Center",
+    "address": "9, Kano Road, Kano, Nigeria",
+    "phone": "08155667788",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-18T14:50:00Z"
+  },
+  {
+    "name": "Harborview Heights Hospital",
+    "address": "21, Abakaliki Lane, Abakaliki, Nigeria",
+    "phone": "08066778899",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-06-30T11:10:00Z"
+  },
+  {
+    "name": "Vista Ridge Clinic",
+    "address": "16, Wukari Street, Jalingo, Nigeria",
+    "phone": "08177889900",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-07-12T17:45:00Z"
+  },
+  {
+    "name": "Jade Life Medical Center",
+    "address": "12, Ikot Ekpene Road, Uyo, Nigeria",
+    "phone": "08088990011",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-25T13:25:00Z"
+  },
+  {
+    "name": "Astral Harmony Hospital",
+    "address": "27, Lokoja Road, Lokoja, Nigeria",
+    "phone": "08199001122",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-09-05T10:05:00Z"
+  },
+  {
+    "name": "Sunset Ridge Medical Center",
+    "address": "10, Ado Road, Ado-Ekiti, Nigeria",
+    "phone": "08001231234",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-10-18T15:30:00Z"
+  },
+  {
+    "name": "Celestial Gardens Clinic",
+    "address": "18, Umuahia Avenue, Umuahia, Nigeria",
+    "phone": "08111223344",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-11-02T11:50:00Z"
+  },
+  {
+    "name": "Silk Sands Hospital",
+    "address": "15, Dutse Street, Dutse, Nigeria",
+    "phone": "08023456789",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-12-10T09:00:00Z"
+  },
+  {
+    "name": "Cerulean Sky Wellness Center",
+    "address": "23, Yola Road, Yola, Nigeria",
+    "phone": "08134567890",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-12-20T14:15:00Z"
+  },
+  {
+    "name": "Elite Life Health Pavilion",
+    "address": "8, Keffi Lane, Keffi, Nigeria",
+    "phone": "08045678901",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-11-15T12:00:00Z"
+  },
+  {
+    "name": "Majestic Ridge General Hospital",
+    "address": "20, Efon-Alaaye Street, Efon-Alaaye, Nigeria",
+    "phone": "08156789012",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-10-28T16:40:00Z"
+  },
+  {
+    "name": "Tranquil Life Medical Center",
+    "address": "7, Iseyin Road, Iseyin, Nigeria",
+    "phone": "08067890123",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-09-14T09:30:00Z"
+  },
+  {
+    "name": "Azure Life Hospital",
+    "address": "11, Minna Road, Minna, Nigeria",
+    "phone": "08178901234",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-08-02T14:00:00Z"
+  },
+  {
+    "name": "Lavender Horizon Medical Center",
+    "address": "25, Makurdi Street, Makurdi, Nigeria",
+    "phone": "08089012345",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-07-19T10:20:00Z"
+  },
+  {
+    "name": "Pristine Gardens Health Services",
+    "address": "17, Onitsha Road, Onitsha, Nigeria",
+    "phone": "08190123456",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-06-08T15:50:00Z"
+  },
+  {
+    "name": "Diamond Ridge Clinic",
+    "address": "22, Lafiaji Street, Lafiaji, Nigeria",
+    "phone": "08001234567",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-05-22T12:35:00Z"
+  },
+  {
+    "name": "Royal Emerald Hospital",
+    "address": "18, Ado Road, Ajah, Lagos, Nigeria",
+    "phone": "08111222333",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-01-10T09:45:00Z"
+  },
+  {
+    "name": "Golden Meadows Medical Center",
+    "address": "14, Ring Road, Ibadan, Nigeria",
+    "phone": "08022334455",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-02-20T13:20:00Z"
+  },
+  {
+    "name": "Peak View Health Pavilion",
+    "address": "9, Herbert Macaulay Way, Yaba, Lagos, Nigeria",
+    "phone": "08133445566",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-03-05T15:55:00Z"
+  },
+  {
+    "name": "Sunset Horizon Wellness Clinic",
+    "address": "22, Umuahia Road, Aba, Nigeria",
+    "phone": "08044556677",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-04-15T11:30:00Z"
+  },
+  {
+    "name": "Northern Breeze Medical Center",
+    "address": "11, Opebi Road, Ikeja, Lagos, Nigeria",
+    "phone": "08155667788",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-25T16:05:00Z"
+  },
+  {
+    "name": "Harmony Haven Hospital",
+    "address": "30, Stadium Road, Port Harcourt, Nigeria",
+    "phone": "08066778899",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-06-10T14:40:00Z"
+  },
+  {
+    "name": "Aurora Vista Clinic",
+    "address": "16, Katsina Ala Road, Makurdi, Nigeria",
+    "phone": "08177889900",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-07-20T10:15:00Z"
+  },
+  {
+    "name": "Seraphic Life Medical Center",
+    "address": "12, Otukpo Road, Otukpo, Nigeria",
+    "phone": "08088990011",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-30T15:50:00Z"
+  },
+  {
+    "name": "Blue Haven Hospital",
+    "address": "27, Trans-Amadi Road, Port Harcourt, Nigeria",
+    "phone": "08199001122",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-09-12T11:25:00Z"
+  },
+  {
+    "name": "Sunrise Ridge Medical Center",
+    "address": "10, Okpara Avenue, Enugu, Nigeria",
+    "phone": "08001231234",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-10-25T16:00:00Z"
+  },
+  {
+    "name": "Celestial Oasis Clinic",
+    "address": "18, Ozoro Road, Ozoro, Nigeria",
+    "phone": "08111223344",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-11-08T13:35:00Z"
+  },
+  {
+    "name": "Silver Sands Hospital",
+    "address": "15, Ikorodu Road, Ikorodu, Lagos, Nigeria",
+    "phone": "08023456789",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-12-18T10:10:00Z"
+  },
+  {
+    "name": "Elysian Heights Wellness Center",
+    "address": "23, Benin-Auchi Road, Benin City, Nigeria",
+    "phone": "08134567890",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-11-02T14:45:00Z"
+  },
+  {
+    "name": "Pinnacle Life Health Pavilion",
+    "address": "8, Abak Road, Uyo, Nigeria",
+    "phone": "08045678901",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-10-15T12:20:00Z"
+  },
+  {
+    "name": "Majestic Haven General Hospital",
+    "address": "20, Oba Adesida Road, Akure, Nigeria",
+    "phone": "08156789012",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-09-28T16:55:00Z"
+  },
+  {
+    "name": "Tranquil Vista Medical Clinic",
+    "address": "7, Sapele Road, Benin City, Nigeria",
+    "phone": "08067890123",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-14T11:30:00Z"
+  },
+  {
+    "name": "Azure Haven Hospital",
+    "address": "11, Yenagoa Road, Yenagoa, Nigeria",
+    "phone": "08178901234",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-07-27T15:05:00Z"
+  },
+  {
+    "name": "Lavender Vista Horizon Medical Center",
+    "address": "25, Owerri-Orlu Road, Owerri, Nigeria",
+    "phone": "08089012345",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-06-10T12:40:00Z"
+  },
+  {
+    "name": "Pristine Gardens Harmony Health Services",
+    "address": "17, Ijero-Ekiti Road, Ijero-Ekiti, Nigeria",
+    "phone": "08190123456",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-22T16:15:00Z"
+  },
+  {
+    "name": "Diamond Ridge Clinic",
+    "address": "22, Lekki-Epe Expressway, Lekki, Lagos, Nigeria",
+    "phone": "08001234567",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-04-05T10:50:00Z"
+  },
+  {
+    "name": "Emerald Heights Medical Center",
+    "address": "14, Oba Akinjobi Way, Ikeja GRA, Lagos, Nigeria",
+    "phone": "08111222333",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-01-08T08:15:00Z"
+  },
+  {
+    "name": "Golden Haven Wellness Clinic",
+    "address": "19, Gbongan-Osogbo Road, Osogbo, Nigeria",
+    "phone": "08022334455",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-02-18T12:30:00Z"
+  },
+  {
+    "name": "Elysium Medical Pavilion",
+    "address": "9, Federal Housing Estate, Calabar, Nigeria",
+    "phone": "08133445566",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-03-02T15:45:00Z"
+  },
+  {
+    "name": "Sunrise Serenity Hospital",
+    "address": "22, Abak Road, Uyo, Nigeria",
+    "phone": "08044556677",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-04-12T11:00:00Z"
+  },
+  {
+    "name": "Northern Oasis Medical Center",
+    "address": "11, Ahmadu Bello Way, Kaduna, Nigeria",
+    "phone": "08155667788",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-22T16:15:00Z"
+  },
+  {
+    "name": "Harmony Breeze General Hospital",
+    "address": "30, Aminu Kano Crescent, Wuse, Abuja, Nigeria",
+    "phone": "08066778899",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-06-08T14:30:00Z"
+  },
+  {
+    "name": "Sapphire Heights Clinic",
+    "address": "16, Nsukka Road, Enugu, Nigeria",
+    "phone": "08177889900",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-07-18T10:45:00Z"
+  },
+  {
+    "name": "Tranquil Seraphic Medical Center",
+    "address": "12, Bompai Road, Kano, Nigeria",
+    "phone": "08088990011",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-28T16:00:00Z"
+  },
+  {
+    "name": "Blue Horizon Hospital",
+    "address": "27, Elelenwo Street, Port Harcourt, Nigeria",
+    "phone": "08199001122",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-09-10T12:15:00Z"
+  },
+  {
+    "name": "Sunset Oasis Medical Center",
+    "address": "10, Mokola Road, Ibadan, Nigeria",
+    "phone": "08001231234",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-10-22T16:30:00Z"
+  },
+  {
+    "name": "Celestial Serenity Clinic",
+    "address": "18, Ikot Ekpene Road, Ikot Ekpene, Nigeria",
+    "phone": "08111223344",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-11-05T12:45:00Z"
+  },
+  {
+    "name": "Silver Sands Hospital",
+    "address": "15, Okpara Avenue, Enugu, Nigeria",
+    "phone": "08023456789",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-12-15T09:00:00Z"
+  },
+  {
+    "name": "Azure Serenity Wellness Center",
+    "address": "23, Gwarinpa Estate, Abuja, Nigeria",
+    "phone": "08134567890",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-11-28T15:15:00Z"
+  },
+  {
+    "name": "Pinnacle Seraphic Health Pavilion",
+    "address": "8, Ajose Adeogun Street, Victoria Island, Lagos, Nigeria",
+    "phone": "08045678901",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-10-10T11:30:00Z"
+  },
+  {
+    "name": "Majestic Horizon General Hospital",
+    "address": "20, Ilesa-Akure Expressway, Akure, Nigeria",
+    "phone": "08156789012",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-09-24T16:45:00Z"
+  },
+  {
+    "name": "Tranquil Serenity Medical Clinic",
+    "address": "7, Aleshinloye Street, Ibadan, Nigeria",
+    "phone": "08067890123",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-07T12:00:00Z"
+  },
+  {
+    "name": "Azure Breeze Hospital",
+    "address": "11, Ado-Owo Road, Ado-Ekiti, Nigeria",
+    "phone": "08178901234",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-07-20T15:15:00Z"
+  },
+  {
+    "name": "Lavender Horizon Medical Center",
+    "address": "25, Rumuola Road, Port Harcourt, Nigeria",
+    "phone": "08089012345",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-06-03T11:30:00Z"
+  },
+  {
+    "name": "Pristine Oasis Harmony Health Services",
+    "address": "17, Okigwe Road, Owerri, Nigeria",
+    "phone": "08190123456",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-17T16:45:00Z"
+  },
+  {
+    "name": "Diamond Ridge Clinic",
+    "address": "22, Alaba International Market Road, Ojo, Lagos, Nigeria",
+    "phone": "08001234567",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-04-30T12:00:00Z"
+  },
+  {
+    "name": "Royal Sapphire Medical Center",
+    "address": "14, Unity Road, Ilorin, Nigeria",
+    "phone": "08111222333",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-01-07T08:00:00Z"
+  },
+  {
+    "name": "Golden Sunrise Wellness Clinic",
+    "address": "19, Iyana-Ipaja Road, Lagos, Nigeria",
+    "phone": "08022334455",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-02-17T12:15:00Z"
+  },
+  {
+    "name": "Elysian Harmony Health Pavilion",
+    "address": "9, Kuto Road, Abeokuta, Nigeria",
+    "phone": "08133445566",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-03-01T15:30:00Z"
+  },
+  {
+    "name": "Sunflower Ridge Medical Center",
+    "address": "22, Ring Road, Ibadan, Nigeria",
+    "phone": "08044556677",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-04-10T10:45:00Z"
+  },
+  {
+    "name": "Northern Serenity Hospital",
+    "address": "11, Sokoto Road, Sokoto, Nigeria",
+    "phone": "08155667788",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-20T16:00:00Z"
+  },
+  {
+    "name": "Harmony Breeze General Hospital",
+    "address": "30, Bompai Road, Kano, Nigeria",
+    "phone": "08066778899",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-06-06T14:15:00Z"
+  },
+  {
+    "name": "Sapphire Heights Clinic",
+    "address": "16, Okpara Avenue, Enugu, Nigeria",
+    "phone": "08177889900",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-07-16T10:30:00Z"
+  },
+  {
+    "name": "Tranquil Seraphic Medical Center",
+    "address": "12, Isara Road, Ijebu-Ode, Nigeria",
+    "phone": "08088990011",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-26T15:45:00Z"
+  },
+  {
+    "name": "Blue Horizon Hospital",
+    "address": "27, Ahmadu Bello Way, Kaduna, Nigeria",
+    "phone": "08199001122",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-09-08T12:00:00Z"
+  },
+  {
+    "name": "Sunset Oasis Medical Center",
+    "address": "10, Ikot Ekpene Road, Ikot Ekpene, Nigeria",
+    "phone": "08001231234",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-10-20T16:15:00Z"
+  },
+  {
+    "name": "Celestial Serenity Clinic",
+    "address": "18, Okigwe Road, Owerri, Nigeria",
+    "phone": "08111223344",
+    "ratings": 5,
+    "favorite": true,
+    "lastVisited": "2023-11-03T12:30:00Z"
+  },
+  {
+    "name": "Silver Sands Hospital",
+    "address": "15, Ikoyi Crescent, Ikoyi, Lagos, Nigeria",
+    "phone": "08023456789",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-12-13T09:45:00Z"
+  },
+  {
+    "name": "Azure Serenity Wellness Center",
+    "address": "23, Sapele Road, Benin City, Nigeria",
+    "phone": "08134567890",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-11-26T15:00:00Z"
+  },
+  {
+    "name": "Pinnacle Seraphic Health Pavilion",
+    "address": "8, Aminu Kano Crescent, Wuse, Abuja, Nigeria",
+    "phone": "08045678901",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-10-08T11:15:00Z"
+  },
+  {
+    "name": "Majestic Horizon General Hospital",
+    "address": "20, Airport Road, Warri, Nigeria",
+    "phone": "08156789012",
+    "ratings": 4,
+    "favorite": true,
+    "lastVisited": "2023-09-22T16:30:00Z"
+  },
+  {
+    "name": "Tranquil Serenity Medical Clinic",
+    "address": "7, Aminu Kano Crescent, Wuse 2, Abuja, Nigeria",
+    "phone": "08067890123",
+    "ratings": 3,
+    "favorite": false,
+    "lastVisited": "2023-08-05T12:45:00Z"
+  },
+  {
+    "name": "Azure Breeze Hospital",
+    "address": "11, Agidingbi Road, Ikeja, Lagos, Nigeria",
+    "phone": "08178901234",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-07-18T15:00:00Z"
+  },
+  {
+    "name": "Lavender Horizon Medical Center",
+    "address": "25, Oba Akinjobi Way, Ikeja GRA, Lagos, Nigeria",
+    "phone": "08089012345",
+    "ratings": 4,
+    "favorite": false,
+    "lastVisited": "2023-06-01T11:15:00Z"
+  },
+  {
+    "name": "Pristine Oasis Harmony Health Services",
+    "address": "17, Otukpo Road, Otukpo, Nigeria",
+    "phone": "08190123456",
+    "ratings": 3,
+    "favorite": true,
+    "lastVisited": "2023-05-15T16:30:00Z"
+  },
+  {
+    "name": "Diamond Ridge Clinic",
+    "address": "22, Idiroko Road, Sango-Ota, Nigeria",
+    "phone": "08001234567",
+    "ratings": 5,
+    "favorite": false,
+    "lastVisited": "2023-04-28T12:45:00Z"
+  }
+]
+

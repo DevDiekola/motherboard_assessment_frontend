@@ -1,65 +1,55 @@
 import '../../styles/Login.scss';
 import logo from '../../assets/images/logo.png';
-import { FormEvent, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { FieldValues, useForm } from 'react-hook-form';
+import { useSelector } from 'react-redux';
+import { useAppDispatch } from '../../store/store';
+import { LoginData, loginUser } from '../../features/auth/auth_action';
+import { AuthState } from '../../features/auth/auth_slice';
+// import { AuthState } from '../../features/auth/auth_slice';
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [remember, setRemember] = useState(false);
+  const { user, loginError } = useSelector((state: any) => state.auth as AuthState);
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+  const { register, handleSubmit } = useForm();
+  
+  const dispatch = useAppDispatch();
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    setErrorMessage('');
-
-    try {
-      const res = await fetch('http://localhost:5000/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password, remember }),
-      });
-
-      const data = await res.json();
-
-      if (res.status == 200) {
-        navigate("/hospitals");
-      }
-      else {
-        setErrorMessage(data.message);
-      }
-
-      setEmail('');
-      setPassword('');
-
-    } catch (error) {
-      setErrorMessage("Error sending API request");
-      console.log(e);
+  const submitForm = (data: FieldValues) => {
+    const loginData: LoginData = {
+      email: data.email.toLowerCase(),
+      password: data.password,
+      remember: data.remember
     }
+    dispatch(loginUser(loginData));
   }
+
+  useEffect(() => {
+    // Redirect user to hospitals page if registration was successful
+    if (user) navigate('/hospitals');
+  }, [user])
 
   return (
     <div id="login" className="d-flex flex-column justify-content-center align-items-center">
       <img src={logo} alt="Logo" />
-      <form onSubmit={handleSubmit} className="bg-white mt-4">
+      <form onSubmit={handleSubmit(submitForm)} className="bg-white mt-4">
         <h3 className="text-center">Log In</h3>
         <p className="text-center">Enter your credentials to access your account</p>
-        {errorMessage !== "" && <div className="error-message w-100 mb-3">{errorMessage}</div>}
+        {loginError && <div className="error-message w-100 mb-3">{loginError}</div>}
         <div className="form-group">
           <label htmlFor="email">EMAIL ADDRESS</label>
           <div className="form-input pt-1">
             <input 
-              onChange={(e) => setEmail(e.target.value)} 
+              // onChange={(e) => setEmail(e.target.value)} 
               id="email" 
               type="text" 
               placeholder="Enter your email address" 
+              required
+              {...register('email')}
             />
             <i className="ri-mail-line"></i>
           </div>
@@ -68,10 +58,12 @@ const Login = () => {
           <label htmlFor="password">PASSWORD</label>
           <div className="form-input pt-1">
             <input 
-              onChange={(e) => setPassword(e.target.value)} 
+              // onChange={(e) => setPassword(e.target.value)} 
               id="password" 
               type={passwordVisible ? "text" : "password"}
               placeholder="Enter your password" 
+              required
+              {...register('password')}
             />
             <i 
               className={passwordVisible ? "ri-eye-line" : "ri-eye-off-line"} 
@@ -83,8 +75,9 @@ const Login = () => {
         <div className="d-flex justify-content-between mt-4">
           <div className="remember d-flex align-items-center">
             <input 
-              onChange={(e) => setRemember(e.target.checked)} 
+              // onChange={(e) => setRemember(e.target.checked)} 
               type="checkbox" 
+              {...register('remember')}
             />
             <span>Remember me for 30 days</span>
           </div>
