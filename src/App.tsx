@@ -15,7 +15,7 @@ function App() {
 
   const dispatch = useAppDispatch();
 
-  const { data } = useGetUserDetailsQuery('user', {
+  const { data, error } = useGetUserDetailsQuery('user', {
     pollingInterval: 900000,
   });
 
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route element={<ProtectedRoute />}>
+        <Route element={<ProtectedRoute error={error} />}>
           <Route path="/" element={ <Hospitals/> } />
           <Route path="/hospitals" element={ <Hospitals/> } />
         </Route>

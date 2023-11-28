@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { AuthState } from '../../features/auth/auth_slice';
 import { useAppDispatch } from '../../store/store';
 import { logoutUser } from '../../features/auth/auth_action';
+import { openSidebar } from '../../features/sidebar/sidebar_slice';
 
 const Navbar = () => {
   const { user } = useSelector((state: any) => state.auth as AuthState);
@@ -11,6 +12,9 @@ const Navbar = () => {
   
   return (
     <div id="navbar" className="d-flex justify-content-between align-items-center px-4">
+      <div onClick={() => dispatch(openSidebar())} className="navbar-drawer">
+        <i className="ri-menu-2-line"></i>
+      </div>
       <div className="input-div">
         <i className="ri-search-line"></i>
         <input type="text" placeholder="Search here..." />

@@ -8,6 +8,12 @@
     bottom: 0px;
     background-color: white;
     border-right: 1px solid #E4E7EC;
+    transition: 0.5s ease;
+    z-index: 10000;
+
+    @media only screen and (max-width: 1200px) {
+        left: -$sidebar-width;
+    }
 
     .top-section {
         border-bottom: 1px solid lightgrey;
@@ -83,4 +89,32 @@
             }
     }
     
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #sidebar.open {
+        left: 0px !important;
+    }
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+
+    .close-sidebar {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+
+        i {
+            font-size: 25px;
+            color: white;
+        }
+    }
 }

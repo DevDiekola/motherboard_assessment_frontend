@@ -6,7 +6,6 @@
 
     table {
         width: 100%;
-        margin-top: 1rem;
         border-collapse: separate;
         border-spacing: 0;
 
@@ -36,13 +35,25 @@
                     font-weight: 600;
                 }
 
+                > :nth-child(1) {
+                    min-width: 150px;
+                    max-width: 250px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                > :nth-child(2) {
+                    min-width: 200px;
+                    max-width: 300px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
                 td {
                     padding: 15px 20px;
                     font-size: 14px;
-                    // text-overflow: ellipsis;
-                    // overflow: hidden;
-                    // white-space: nowrap;
-                    // max-width: 200px;
 
                     .star {
                         color: #F5B546;
@@ -109,6 +120,39 @@
         /* bottom-right border-radius */
         tr:last-child td:last-child {
             border-bottom-right-radius: 6px;
+        }
+    }
+
+    .pagination {
+        button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            outline-width: 0px;
+            background-color: $color-4;
+            color: $color-1;
+            margin: 0px 7px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        button.disabled {
+            opacity: 0.5;
+        }
+
+        span {
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        input, select {
+            margin-left: 10px;
+            outline-width: 0px;
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
         }
     }
 }

@@ -6,7 +6,11 @@
     right: 0;
     bottom: 0;
     left: $sidebar-width;
-    overflow: auto;
+    overflow-y: auto;
+
+    @media only screen and (max-width: 1200px) {
+        left: 0;
+    }
 
     // width: calc(100% - 250px);
     // height: calc(100vh - $navbar-height);
@@ -35,11 +39,23 @@
             span {
                 font-size: 13px;
                 font-weight: 500;
+
+                @media only screen and (max-width: 420px) {
+                    span {
+                        display: none;
+                    }
+                }
             }
         }
     }
 
     .categories {
+        overflow-y: auto;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
         .category {
             // max-width: 150px;
             background-color: #F0F2F5;
@@ -51,6 +67,7 @@
             span {
                 font-size: 12px;
                 font-weight: 500;
+                white-space: nowrap;
             }
 
             .count {

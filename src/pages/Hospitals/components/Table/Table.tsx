@@ -1,9 +1,9 @@
-import { useSortBy, useTable } from "react-table";
+import { usePagination, useSortBy, useTable } from "react-table";
 import '../../../../styles/Table.scss';
 
 interface Props {
   columns: any,
-  data: any
+  data: any,
 }
 
 const Table = ({ columns, data }: Props) => {
@@ -12,15 +12,31 @@ const Table = ({ columns, data }: Props) => {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rows,
-    prepareRow
-  } = useTable({columns, data}, useSortBy);
+    prepareRow,
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
+    state: { pageIndex, pageSize }
+  } = useTable(
+    {
+      columns,
+      data
+    },
+    useSortBy,
+    usePagination
+  ) as any;
 
   return (
-    <div id="table-div">
+    <div id="table-div" className="table-responsive mt-3">
       <table {...getTableProps()}>
         <thead>
-          {headerGroups.map(headerGroup => (
+          {headerGroups.map((headerGroup: any) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column: any) => (
                 <th {...column.getHeaderProps(column.getSortByToggleProps())}>
@@ -36,19 +52,59 @@ const Table = ({ columns, data }: Props) => {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {rows.map((row, _) => {
+          {page.map((row: any) => {
             prepareRow(row);
             return (
               <tr {...row.getRowProps()}>
-                {row.cells.map(cell => {
-                  return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
+                {row.cells.map((cell: any) => {
+                  return (
+                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                  );
                 })}
-                
               </tr>
             );
           })}
         </tbody>
       </table>
+      <div className="pagination w-100 py-4 d-flex justify-content-center align-items-center">
+        <button onClick={() => gotoPage(0)} className={!canPreviousPage ? "disabled" : ""}>
+          {"<<"}
+        </button>
+        <button onClick={() => previousPage()} className={!canPreviousPage ? "disabled" : ""}>
+          {"<"}
+        </button>
+        <button onClick={() => nextPage()} className={!canNextPage ? "disabled" : ""}>
+          {">"}
+        </button>
+        <button onClick={() => gotoPage(pageCount - 1)} className={!canNextPage ? "disabled" : ""}>
+          {">>"}
+        </button>
+        <span className="ms-3">Page {pageIndex + 1} of {pageOptions.length}</span>
+        <span className="mx-2">|</span>
+        <span>Go to page:</span>
+        <input
+          type="number"
+          inputMode="numeric"
+          defaultValue={pageIndex + 1}
+          onChange={(e) => {
+            const page = e.target.value ? Number(e.target.value) - 1 : 0;
+            gotoPage(page);
+          }}
+          max={pageOptions.length}
+        />
+        <select
+          value={pageSize}
+          onChange={(e) => {
+            setPageSize(Number(e.target.value));
+          }}
+        >
+          {[10, 20, 30, 40, 50].map((pageSize) => (
+            <option key={pageSize} value={pageSize}>
+              Show {pageSize}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 }

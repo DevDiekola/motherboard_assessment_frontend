@@ -21,7 +21,7 @@ const initialState: AuthState = {
   loginSuccess: false,
   registerSuccess: false,
   user: null,
-  userLoading: false
+  userLoading: true
 }
 
 const authSlice = createSlice({
@@ -29,7 +29,8 @@ const authSlice = createSlice({
   initialState,
   reducers: {
     setCredentials: (state, { payload }) => {
-      state.user = payload.user
+      state.userLoading = false;
+      state.user = payload.user;
     },
   },
   extraReducers: (builder) => {
@@ -74,7 +75,7 @@ const authSlice = createSlice({
 
 })
 
-const authReducer = authSlice.reducer
+const authReducer = authSlice.reducer;
 
 export const { setCredentials } = authSlice.actions
 export default authReducer

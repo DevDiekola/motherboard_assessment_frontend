@@ -9,6 +9,22 @@
     background-color: white;
     z-index: 100;
 
+    @media only screen and (max-width: 1200px) {
+        width: 100%;
+    }
+
+    .navbar-drawer {
+        display: none;
+
+        @media only screen and (max-width: 1200px) {
+            display: block;
+        }
+
+        i {
+            font-size: 20px;
+        }
+    }
+
     .input-div {
         position: relative;
         width: 60%;
@@ -72,6 +88,11 @@
                         font-size: 13px;
                         font-weight: 500;
                     }
+                }
+
+                a, a:link, a:hover, a:visited, a:active, a:focus {
+                    background-color: transparent;
+                    color: blackHo;
                 }
             }
         }

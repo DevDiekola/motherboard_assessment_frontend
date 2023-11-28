@@ -11,7 +11,7 @@ import { AuthState } from '../../features/auth/auth_slice';
 // import { AuthState } from '../../features/auth/auth_slice';
 
 const Login = () => {
-  const { user, loginError } = useSelector((state: any) => state.auth as AuthState);
+  const { user, loginLoading, loginError } = useSelector((state: any) => state.auth as AuthState);
   const [passwordVisible, setPasswordVisible] = useState(false);
   const { register, handleSubmit } = useForm();
   
@@ -79,11 +79,11 @@ const Login = () => {
               type="checkbox" 
               {...register('remember')}
             />
-            <span>Remember me for 30 days</span>
+            <span>Remember me<span> for 30 days</span></span>
           </div>
           <a href="#" className="forgot">Forgot Password?</a>
         </div>
-        <button>Log into Account</button>
+        <button className={loginLoading ? "loading" : ""} type="submit">Log into Account</button>
         <div className="new d-flex justify-content-center mt-4">
           <span>Are you new here?</span>
           <Link to='/register'>Create Account</Link>

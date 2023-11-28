@@ -9,7 +9,7 @@ import { useAppDispatch } from '../../store/store';
 import { AuthState } from '../../features/auth/auth_slice';
 
 const Register = () => {
-  const { registerError, registerSuccess } = useSelector((state: any) => state.auth as AuthState);
+  const { registerSuccess, registerError, registerLoading } = useSelector((state: any) => state.auth as AuthState);
   const dispatch = useAppDispatch();
   const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -44,7 +44,6 @@ const Register = () => {
           <label htmlFor="email">EMAIL ADDRESS</label>
           <div className="form-input pt-1">
             <input 
-              // onChange={(e) => setEmail(e.target.value)} 
               id="email" 
               type="text" 
               placeholder="Enter your email address" 
@@ -58,7 +57,6 @@ const Register = () => {
           <label htmlFor="password">PASSWORD</label>
           <div className="form-input pt-1">
             <input 
-              // onChange={(e) => setPassword(e.target.value)} 
               id="password" 
               type={passwordVisible ? "text" : "password"}
               placeholder="Enter your password" 
@@ -73,7 +71,7 @@ const Register = () => {
             ></i>
           </div>
         </div>
-        <button type="submit">Create Account</button>
+        <button className={registerLoading ? "loading" : ""} type="submit">Create Account</button>
         <div className="returning d-flex justify-content-center mt-4">
           <span>Already have an account?</span>
           <Link to='/login'>Login</Link>

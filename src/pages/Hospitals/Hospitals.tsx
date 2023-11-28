@@ -89,7 +89,7 @@ const Hospitals = () => {
           <h3>My Hospitals</h3>
           <button className="d-flex justify-content-between align-items-center">
             <i className="ri-search-line me-2"></i>
-            <span>Find hospitals near me</span>
+            <span>Find hospitals<span> near me</span></span>
           </button>
         </div>
         <div className="categories d-flex mt-4">
@@ -130,7 +130,7 @@ const Hospitals = () => {
               <span>Filter</span>
             </div>
             <div className="d-flex align-items-center">
-              <i className="ri-arrow-down-s-line"></i>
+              <i className="ri-filter-3-line me-2"></i>
               <span>Sort</span>
             </div>
           </div>
