@@ -44,7 +44,7 @@ const Login = () => {
           <div className="form-input pt-1">
             <input 
               id="email" 
-              type="text" 
+              type="email" 
               placeholder="Enter your email address" 
               required
               {...register('email')}
